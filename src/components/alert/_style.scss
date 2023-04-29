@@ -1,0 +1,17 @@
+.alert {
+    position: relative;
+    display: inline-block;
+    background-color: $blue;
+    color: $white;
+    width: 24rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    >* {
+        margin: 0;
+    }
+    .close-btn {
+        position: absolute;
+        right: 0.5rem;
+    }
+}
+

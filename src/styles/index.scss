@@ -1,0 +1,16 @@
+// 样式变量
+@import 'variables';
+// nomalize css 样式
+@import 'reboot';
+// 引入混和（就是可以复用的样式）
+@import 'mixin';
+// Button 组件样式
+@import '../components/button/style';
+// Alert 组件样式
+@import '../components/alert/style';
+// Menu 组件样式
+@import '../components/menu/style';
+// Icon 组件样式
+@import '../components/icon/style';
+// Input 组件样式
+@import '../components/input/style';

@@ -1,0 +1,35 @@
+// padding font-size border-radius
+@mixin button-size($padding-x, $padding-y, $font-size, $border-radius) {
+    padding: $padding-y $padding-x;
+    font-size: $font-size;
+    border-radius: $border-radius;
+}
+
+// color
+@mixin button-appearance(
+    $background,
+    $border,
+    $color,
+    $hover-background: scale-color($background, $lightness: 30%),
+    $hover-border: scale-color($border, $lightness: 30%),
+    $hover-color: $color,
+) {
+    color: $color;
+    background: $background;
+    border-color: $border;
+
+    &:hover {
+        color: $hover-color;
+        background: $hover-background;
+        border: $hover-border;
+    }
+
+    &:focus,
+    &.focus {
+        color: $hover-color;
+        background: $hover-background;
+        border: $hover-border;
+    }
+}
+
+// Alert mixin
